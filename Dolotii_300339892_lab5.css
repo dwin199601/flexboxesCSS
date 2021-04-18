@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* BASE LAYOUT*/
+html {
+    width:100%;
+    background-color: rgb(212, 231, 161);
+}
+body {
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 1px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+header {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(154, 154, 236);
+   
+}
+header h1{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(97, 94, 91);
+    padding: 10px;
+    color:blanchedalmond;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.navbar {
+    background-color: rgb(57, 126, 104);
+    min-height: 40px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    
+}
+nav.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+nav.navbar a:hover{
+    color: rgb(155, 153, 28);
+    
+}
+nav.navbar div {
+    flex: 1 1 150px;
+}
+/*.navbar #div1 {
+    flex: 1 1 200px;
+    background-color: rgb(161, 238, 184);
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.navbar #div2 {
+    flex: 2 1 200px;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.navbar #div3{
+    flex: 1 1 200px;
+    background-color: rgb(236, 122, 145);
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+}
+*/
+aside {
+    flex: 1 1 100px;
+    background-color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ aside p{
+     padding-left: 10px;
+ }
+ section#mainsecid {
+    flex: 3 1 361px;
+    background-color: rgb(155, 111, 111);
+    height: 400px;
+    text-align: center;
+ }
+
+
+#secondsectionid{
+    display: flex;
+   flex-flow: row wrap;
+}
+
+#secondsectionid article {
+    flex: 1 1 150px;
+    background-color: rgb(101, 230, 144);
+    border-color: rgb(9, 3, 88);
+    border-style: solid;
+    border-width: 2px;
+    margin: 5% 5%;
+}
+
+#secondsectionid article p{
+
+}
+.articletext{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Mobile layout */
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+    
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+       
+        
+    }
+    aside {
+        display: none;
+    }
+
+    #secondsectionid{
+       display: flex;
+       flex-flow: row column;
+    }
+
+
+}
+
+
+
+/* Tablet */
+@media only screen and ( min-width: 600px) {
+
+
+}
+
+
+/*desktop layout */
+
+@media only screen and (min-width: 768px) {
+
+    
+}
